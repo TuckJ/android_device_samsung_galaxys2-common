@@ -86,9 +86,9 @@ def WriteFullOTAPackage(input_zip, output_zip):
 
   script.ShowProgress(0.2, 0)
 
-  if OPTIONS.backuptool:
-    script.ShowProgress(0.2, 10)
-    script.RunBackup("restore")
+#  if OPTIONS.backuptool:
+#    script.ShowProgress(0.2, 10)
+#    script.RunBackup("restore")
 
   script.ShowProgress(0.2, 10)
   script.EMMCWriteRawImage("/dev/block/mmcblk0p5", "boot.img")
